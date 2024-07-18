@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="wrapper">
+       <div class="game-info">
+           <input type="text" id="playerXName" placeholder="Player X Name" />
+           <input type="text" id="playerOName" placeholder="Player O Name" />
+           <button id="one-player">Play Against Computer</button>
+           <button id="two-players">Play Against Another Player</button>
+           <button id="restart">Restart</button>
+       </div>
+       <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <div class="popup hide">
+           <p id="message">Sample Message</p>
+           <button id="new-game">New Game</button>
+       </div>
+       <!-- Added statistics section -->
+       <div class="statistics">
+           <h2>Statistics</h2>
+           <div id="playerXStats">Player X: <span id="playerXWins">0</span> Wins, <span id="playerXLosses">0</span> Losses, <span id="playerXDraws">0</span> Draws</div>
+           <div id="playerOStats">Player O: <span id="playerOWins">0</span> Wins, <span id="playerOLosses">0</span> Losses, <span id="playerODraws">0</span> Draws</div>
+       </div>
+   </div>
+
+   <!-- Script -->
+   <script src="script.js"></script>
+</body>
+</html>
+

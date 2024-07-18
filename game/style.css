@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.game-info {
+  margin-bottom: 1em;
+}
+
+#playerXName,
+#playerOName {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  color: #0a0027;
+}
+
+#one-player,
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  margin: 0.5em;
+}
+
+#one-player {
+  background-color: #d161ff;
+}
+
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+  margin: 0 auto;
+}
+
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 4em; /* Adjusted size for visibility */
+}
+
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+
+.popup.hide {
+  display: none;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    width: 80vmin;
+    height: 80vmin;
+  }
+
+  .button-option {
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 10vmin;
+  }
+
+  #one-player,
+  #restart {
+    font-size: 1em;
+    padding: 0.8em;
+  }
+
+  #playerXName,
+  #playerOName {
+    font-size: 0.9em;
+  }
+}
